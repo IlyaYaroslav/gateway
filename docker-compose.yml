@@ -1,0 +1,9 @@
+services:
+  gateway:
+    image: ghcr.io/ilyayaroslav4/gateway:latest
+    container_name: gateway
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_PROFILES_ACTIVE: dv
